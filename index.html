@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An accessible student study planner to organize subjects, study goals, and daily learning.">
+    <meta name="theme-color" content="#f5f7fb">
+    <title>Accessible Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="#home" aria-label="Study Planner home">
+                Study Planner
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#goals">Study Goals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container">
+                <p class="eyebrow">PLAN • LEARN • GROW</p>
+                <h1 id="hero-title">Make time for what matters.</h1>
+                <p class="hero-description">
+                    Organize your study routine, stay focused, and take
+                    one step at a time toward your learning goals.
+                </p>
+                <a class="primary-link" href="#schedule">View my schedule</a>
+            </div>
+        </section>
+
+        <section class="section container" id="subjects"
+                 aria-labelledby="subjects-title">
+            <h2 id="subjects-title">My Subjects</h2>
+            <p class="section-intro">
+                Keep your learning organized by subject.
+            </p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Database Management</h3>
+                    <p>Review SQL, normalization, and database concepts.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Operating Systems</h3>
+                    <p>Study processes, memory management, and scheduling.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Web Development</h3>
+                    <p>Practice HTML, CSS, JavaScript, and accessibility.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section schedule-section" id="schedule"
+                 aria-labelledby="schedule-title">
+            <div class="container">
+                <h2 id="schedule-title">Weekly Study Schedule</h2>
+                <p class="section-intro">
+                    A simple example of how to plan study sessions.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Example weekly study plan</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Study activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>DBMS</td>
+                                <td>Practice SQL queries</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Operating Systems</td>
+                                <td>Revise key concepts</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Web Development</td>
+                                <td>Practice HTML and CSS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>DBMS</td>
+                                <td>Review normalization</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Web Development</td>
+                                <td>Test responsive layouts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="goals"
+                 aria-labelledby="goals-title">
+            <h2 id="goals-title">My Study Goals</h2>
+            <p class="section-intro">
+                Use this checklist to keep track of your weekly priorities.
+            </p>
+
+            <ul class="goal-list">
+                <li>Review class notes after college.</li>
+                <li>Practice coding for a short session.</li>
+                <li>Revise important topics before the weekend.</li>
+            </ul>
+
+            <aside class="tip" aria-labelledby="tip-title">
+                <h3 id="tip-title">Study tip</h3>
+                <p>
+                    Take regular breaks and divide large topics into
+                    smaller, manageable tasks.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Accessible Student Study Planner</p>
+            <p>Built with semantic HTML and accessible design principles.</p>
+        </div>
+    </footer>
+</body>
+</html>
